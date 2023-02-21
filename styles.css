@@ -1,0 +1,56 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 17-Feb-2023, 11:10:21 am
+    Author     : Student
+*/
+
+body
+{ 
+    
+   background:url("download.jpg");
+   background-repeat:no-repeat;
+   background-size:cover;
+   height:auto;
+   width:100%;
+}
+font
+{
+    color:white;
+	size: 30;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+h1{
+	color:white;
+}
+h2{
+	color:white;
+}
+
+
+
