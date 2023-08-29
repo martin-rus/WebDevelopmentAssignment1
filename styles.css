@@ -1,20 +1,17 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
-*/
+
 /* 
     Created on : 17-Feb-2023, 11:10:21 am
     Author     : Student
 */
 
 body
-{ 
-    
+{     
    background:url("download.jpg");
    background-repeat:no-repeat;
    background-size:cover;
    height:auto;
    width:100%;
+   margin-bottom: 50px;
 }
 font
 {
@@ -27,7 +24,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: grey;
 }
 
 li {
@@ -39,7 +36,7 @@ li a {
   color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration: none;  
 }
 
 li a:hover {
@@ -53,14 +50,48 @@ h2{
 }
 
 footer{
-  background-color: grey;
-  color: white;
-  padding: 0.1%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: fixed;
+    background-color: grey;
+    color: white;
+    padding: 0.1%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
 }
 
+.institutes
+{
+	font: 20px Tahoma, sans-serif;
+    color: white;	
+}
 
+.contactForm
+{
+	padding-left:20px
+}
+.ms-5{
+	 padding-top:4px;
+	 padding-bottom:0px;
+}
 
+.contactForm form div
+{
+	padding-bottom: 20px;
+	 
+}
+
+.contactForm form div input
+{
+	width:300px;
+} 
+
+.maindiv{
+	padding-left:17px;
+}
+
+.btn
+{
+	background-color:#58D68D;
+	color: black;
+	border-radius: 5px;
+}
