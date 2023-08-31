@@ -4,18 +4,25 @@
     Author     : Student
 */
 
+*{
+	margin: 0;
+}
 body
 {     
-   background:url("download.jpg");
+   background:url("sky3.jpg");
    background-repeat:no-repeat;
    background-size:cover;
    height:auto;
    width:100%;
    margin-bottom: 50px;
 }
+header ul
+{ 
+  
+}
 font
 {
-    color:white;
+     
 	size: 30;
 }
 
@@ -24,35 +31,35 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: grey;
+  background-color: #42c5cf;
 }
 
 li {
-  float: left;
+   float :left;
 }
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;  
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: cyan;
 }
 h1{
-	color:white;
+	 
 }
 h2{
-	color:white;
+	 
 }
 
 footer{
-    background-color: grey;
-    color: white;
-    padding: 0.1%;
+    background-color: #42c5cf;
+    color: black;
+    padding: 0.9%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -62,7 +69,7 @@ footer{
 .institutes
 {
 	font: 20px Tahoma, sans-serif;
-    color: white;	
+     	
 }
 
 .contactForm
@@ -70,8 +77,8 @@ footer{
 	padding-left:20px
 }
 .ms-5{
-	 padding-top:4px;
-	 padding-bottom:0px;
+	  padding: 20px 16px;
+	  
 }
 
 .contactForm form div
@@ -87,11 +94,25 @@ footer{
 
 .maindiv{
 	padding-left:17px;
+	padding-top: 20px;
+}
+
+.item{
+	padding-bottom: 20px;
 }
 
 .btn
 {
-	background-color:#58D68D;
+	background-color:#14e76de6;
 	color: black;
 	border-radius: 5px;
+	cursor: pointer;
+}
+
+#msg
+{
+	color:#ff16cd;
+	margin-top:-20px;
+	display: block;
+	padding-left: 20px;
 }

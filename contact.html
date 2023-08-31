@@ -18,34 +18,54 @@
    <h1 class="ms-5"  > Contact Me </h1> 
    <div class="contactForm" >
     
-  
-  <form action="details.html" class="ms-5" method="GET">
-  <div class="mb-3">
-     
-    <input class="form-control" type="text" name="name" id="fn" aria-label=".form-control-lg example" placeholder="Your name" > 
-   </div>
-  
-   
-    <div>
+    <form name="submit-to-google-sheet" >
+      <div class="mb-3">
+         
+        <input class="form-control" type="text" name="Name" id="fn" aria-label=".form-control-lg example" placeholder="Your name" required> 
+       </div>
+      
        
-     <input type="email" class="form-control" id="exampleFormControlInput1" id="ead" placeholder="Enter phone number">
-  </div>
-  
-     
-    <div> 
-     <textarea placeholder="Your message" rows=20 cols=35 ></textarea>
-   </div>
-   <div class="col-12">
-    <button class="btn" type="submit">Submit form</button>
-  </div>
-  </div>
-   </form>
+        <div class="mb-3">
+           
+         <input type="email" name="Email"class="form-control" id="exampleFormControlInput1" id="ead" placeholder="Enter email id" required>
+      </div>
+      
+         
+        <div class="mb-3"> 
+         <textarea class="form-control" placeholder="Your message" name="Message" rows=20 cols=35 required></textarea>
+       </div>
+       <div class="col-12">
+        <button class="btn" type="submit">Submit</button>
+      </div>
+      </div>
+       </form>
+       <span id="msg"></span>
+       
+       <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxB4gwFMm_QpkfdAPmjMzrSu4EUG_ee6ilNnx7_qAjG6qzu4GiU20PBloAc-2xoLHm2/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg= document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function(){
+          msg.innerHTML = "";
+        },5000); 
+        form.reset();
+        })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+                  
+             <footer>
+                <p style="text-align:left; font-size: 1vw;">
+                Copyright 2023
+          </p>
+            </footer>          
               
-         <footer>
-            <p style="text-align:left; font-size: 1vw;">
-            Copyright 2023
-			</p>
-        </footer>          
-          
-    </body>
-</html>
+        </body>
+    </html>
+    
